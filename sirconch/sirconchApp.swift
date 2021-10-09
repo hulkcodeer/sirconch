@@ -14,7 +14,7 @@ struct sirconchApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainContentView()
         }.onChange(of: scenePhase) { appLifeCycle in
             switch appLifeCycle {
             case .active:

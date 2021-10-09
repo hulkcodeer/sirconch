@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1136149D27116E7C00F6416F /* sirconchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136149C27116E7C00F6416F /* sirconchApp.swift */; };
-		1136149F27116E7C00F6416F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136149E27116E7C00F6416F /* ContentView.swift */; };
+		1136149F27116E7C00F6416F /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136149E27116E7C00F6416F /* MainContentView.swift */; };
 		113614A127116E7D00F6416F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113614A027116E7D00F6416F /* Assets.xcassets */; };
 		113614A427116E7D00F6416F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113614A327116E7D00F6416F /* Preview Assets.xcassets */; };
 		113614AF27116E7D00F6416F /* sirconchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113614AE27116E7D00F6416F /* sirconchTests.swift */; };
@@ -39,7 +39,7 @@
 		0012D1906EDCB5434EAB967B /* Pods_sirconch_sirconchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sirconch_sirconchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1136149927116E7C00F6416F /* sirconch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sirconch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1136149C27116E7C00F6416F /* sirconchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sirconchApp.swift; sourceTree = "<group>"; };
-		1136149E27116E7C00F6416F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1136149E27116E7C00F6416F /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		113614A027116E7D00F6416F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		113614A327116E7D00F6416F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		113614A527116E7D00F6416F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				1136149C27116E7C00F6416F /* sirconchApp.swift */,
-				1136149E27116E7C00F6416F /* ContentView.swift */,
+				1136149E27116E7C00F6416F /* MainContentView.swift */,
 				113614A027116E7D00F6416F /* Assets.xcassets */,
 				113614A527116E7D00F6416F /* Info.plist */,
 				113614A227116E7D00F6416F /* Preview Content */,
@@ -371,7 +371,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1136149F27116E7C00F6416F /* ContentView.swift in Sources */,
+				1136149F27116E7C00F6416F /* MainContentView.swift in Sources */,
 				1136149D27116E7C00F6416F /* sirconchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -542,7 +542,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb.sirconch;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inok.Sir-conch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -567,7 +567,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jb.sirconch;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inok.Sir-conch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
