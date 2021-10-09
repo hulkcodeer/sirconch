@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1136149D27116E7C00F6416F /* sirconchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136149C27116E7C00F6416F /* sirconchApp.swift */; };
+		1136149F27116E7C00F6416F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1136149E27116E7C00F6416F /* ContentView.swift */; };
+		113614A127116E7D00F6416F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113614A027116E7D00F6416F /* Assets.xcassets */; };
+		113614A427116E7D00F6416F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113614A327116E7D00F6416F /* Preview Assets.xcassets */; };
+		113614AF27116E7D00F6416F /* sirconchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113614AE27116E7D00F6416F /* sirconchTests.swift */; };
+		113614BA27116E7D00F6416F /* sirconchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113614B927116E7D00F6416F /* sirconchUITests.swift */; };
+		419DA005DF35486445D0BFD3 /* Pods_sirconch_sirconchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0012D1906EDCB5434EAB967B /* Pods_sirconch_sirconchUITests.framework */; };
+		D6F8C9F806B5A6453D52F5A2 /* Pods_sirconch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A9856112CFD565702B9439 /* Pods_sirconch.framework */; };
+		E4A995F59E16F4377488D409 /* Pods_sirconchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0932885790B0F8E313D694 /* Pods_sirconchTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		113614AB27116E7D00F6416F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1136149127116E7C00F6416F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1136149827116E7C00F6416F;
+			remoteInfo = sirconch;
+		};
+		113614B627116E7D00F6416F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1136149127116E7C00F6416F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1136149827116E7C00F6416F;
+			remoteInfo = sirconch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0012D1906EDCB5434EAB967B /* Pods_sirconch_sirconchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sirconch_sirconchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1136149927116E7C00F6416F /* sirconch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sirconch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1136149C27116E7C00F6416F /* sirconchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sirconchApp.swift; sourceTree = "<group>"; };
+		1136149E27116E7C00F6416F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		113614A027116E7D00F6416F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		113614A327116E7D00F6416F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		113614A527116E7D00F6416F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113614AA27116E7D00F6416F /* sirconchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sirconchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		113614AE27116E7D00F6416F /* sirconchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sirconchTests.swift; sourceTree = "<group>"; };
+		113614B027116E7D00F6416F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113614B527116E7D00F6416F /* sirconchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sirconchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		113614B927116E7D00F6416F /* sirconchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sirconchUITests.swift; sourceTree = "<group>"; };
+		113614BB27116E7D00F6416F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1945138B09BE14C3772746AA /* Pods-sirconch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sirconch.release.xcconfig"; path = "Target Support Files/Pods-sirconch/Pods-sirconch.release.xcconfig"; sourceTree = "<group>"; };
+		20A9856112CFD565702B9439 /* Pods_sirconch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sirconch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E75B6FCA37E8C85B078C6AC /* Pods-sirconch-sirconchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sirconch-sirconchUITests.release.xcconfig"; path = "Target Support Files/Pods-sirconch-sirconchUITests/Pods-sirconch-sirconchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		62A18AD8D415D08E96C6E880 /* Pods-sirconchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sirconchTests.release.xcconfig"; path = "Target Support Files/Pods-sirconchTests/Pods-sirconchTests.release.xcconfig"; sourceTree = "<group>"; };
+		814E658232A31762918BAB8A /* Pods-sirconch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sirconch.debug.xcconfig"; path = "Target Support Files/Pods-sirconch/Pods-sirconch.debug.xcconfig"; sourceTree = "<group>"; };
+		9A0932885790B0F8E313D694 /* Pods_sirconchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sirconchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6276A854F4AEFB0F5B787D8 /* Pods-sirconch-sirconchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sirconch-sirconchUITests.debug.xcconfig"; path = "Target Support Files/Pods-sirconch-sirconchUITests/Pods-sirconch-sirconchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6F35F9D4CDCAEB41CC61D56 /* Pods-sirconchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sirconchTests.debug.xcconfig"; path = "Target Support Files/Pods-sirconchTests/Pods-sirconchTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1136149627116E7C00F6416F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F8C9F806B5A6453D52F5A2 /* Pods_sirconch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113614A727116E7D00F6416F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4A995F59E16F4377488D409 /* Pods_sirconchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113614B227116E7D00F6416F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				419DA005DF35486445D0BFD3 /* Pods_sirconch_sirconchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00F401AFA2A30D7354A9AFB4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				814E658232A31762918BAB8A /* Pods-sirconch.debug.xcconfig */,
+				1945138B09BE14C3772746AA /* Pods-sirconch.release.xcconfig */,
+				C6276A854F4AEFB0F5B787D8 /* Pods-sirconch-sirconchUITests.debug.xcconfig */,
+				5E75B6FCA37E8C85B078C6AC /* Pods-sirconch-sirconchUITests.release.xcconfig */,
+				E6F35F9D4CDCAEB41CC61D56 /* Pods-sirconchTests.debug.xcconfig */,
+				62A18AD8D415D08E96C6E880 /* Pods-sirconchTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		045995DAFDFA60693D8D31D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20A9856112CFD565702B9439 /* Pods_sirconch.framework */,
+				0012D1906EDCB5434EAB967B /* Pods_sirconch_sirconchUITests.framework */,
+				9A0932885790B0F8E313D694 /* Pods_sirconchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1136149027116E7C00F6416F = {
+			isa = PBXGroup;
+			children = (
+				1136149B27116E7C00F6416F /* sirconch */,
+				113614AD27116E7D00F6416F /* sirconchTests */,
+				113614B827116E7D00F6416F /* sirconchUITests */,
+				1136149A27116E7C00F6416F /* Products */,
+				00F401AFA2A30D7354A9AFB4 /* Pods */,
+				045995DAFDFA60693D8D31D5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1136149A27116E7C00F6416F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1136149927116E7C00F6416F /* sirconch.app */,
+				113614AA27116E7D00F6416F /* sirconchTests.xctest */,
+				113614B527116E7D00F6416F /* sirconchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1136149B27116E7C00F6416F /* sirconch */ = {
+			isa = PBXGroup;
+			children = (
+				1136149C27116E7C00F6416F /* sirconchApp.swift */,
+				1136149E27116E7C00F6416F /* ContentView.swift */,
+				113614A027116E7D00F6416F /* Assets.xcassets */,
+				113614A527116E7D00F6416F /* Info.plist */,
+				113614A227116E7D00F6416F /* Preview Content */,
+			);
+			path = sirconch;
+			sourceTree = "<group>";
+		};
+		113614A227116E7D00F6416F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				113614A327116E7D00F6416F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		113614AD27116E7D00F6416F /* sirconchTests */ = {
+			isa = PBXGroup;
+			children = (
+				113614AE27116E7D00F6416F /* sirconchTests.swift */,
+				113614B027116E7D00F6416F /* Info.plist */,
+			);
+			path = sirconchTests;
+			sourceTree = "<group>";
+		};
+		113614B827116E7D00F6416F /* sirconchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				113614B927116E7D00F6416F /* sirconchUITests.swift */,
+				113614BB27116E7D00F6416F /* Info.plist */,
+			);
+			path = sirconchUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1136149827116E7C00F6416F /* sirconch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 113614BE27116E7D00F6416F /* Build configuration list for PBXNativeTarget "sirconch" */;
+			buildPhases = (
+				C6E5698EB01CFF487F8FBEAA /* [CP] Check Pods Manifest.lock */,
+				1136149527116E7C00F6416F /* Sources */,
+				1136149627116E7C00F6416F /* Frameworks */,
+				1136149727116E7C00F6416F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sirconch;
+			productName = sirconch;
+			productReference = 1136149927116E7C00F6416F /* sirconch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		113614A927116E7D00F6416F /* sirconchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 113614C127116E7D00F6416F /* Build configuration list for PBXNativeTarget "sirconchTests" */;
+			buildPhases = (
+				5073ED9F9CC86D8B4788B077 /* [CP] Check Pods Manifest.lock */,
+				113614A627116E7D00F6416F /* Sources */,
+				113614A727116E7D00F6416F /* Frameworks */,
+				113614A827116E7D00F6416F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				113614AC27116E7D00F6416F /* PBXTargetDependency */,
+			);
+			name = sirconchTests;
+			productName = sirconchTests;
+			productReference = 113614AA27116E7D00F6416F /* sirconchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		113614B427116E7D00F6416F /* sirconchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 113614C427116E7D00F6416F /* Build configuration list for PBXNativeTarget "sirconchUITests" */;
+			buildPhases = (
+				8DF847B9FD03DC127503EBF6 /* [CP] Check Pods Manifest.lock */,
+				113614B127116E7D00F6416F /* Sources */,
+				113614B227116E7D00F6416F /* Frameworks */,
+				113614B327116E7D00F6416F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				113614B727116E7D00F6416F /* PBXTargetDependency */,
+			);
+			name = sirconchUITests;
+			productName = sirconchUITests;
+			productReference = 113614B527116E7D00F6416F /* sirconchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1136149127116E7C00F6416F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1136149827116E7C00F6416F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					113614A927116E7D00F6416F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1136149827116E7C00F6416F;
+					};
+					113614B427116E7D00F6416F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1136149827116E7C00F6416F;
+					};
+				};
+			};
+			buildConfigurationList = 1136149427116E7C00F6416F /* Build configuration list for PBXProject "sirconch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1136149027116E7C00F6416F;
+			productRefGroup = 1136149A27116E7C00F6416F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1136149827116E7C00F6416F /* sirconch */,
+				113614A927116E7D00F6416F /* sirconchTests */,
+				113614B427116E7D00F6416F /* sirconchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1136149727116E7C00F6416F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113614A427116E7D00F6416F /* Preview Assets.xcassets in Resources */,
+				113614A127116E7D00F6416F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113614A827116E7D00F6416F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113614B327116E7D00F6416F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5073ED9F9CC86D8B4788B077 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sirconchTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DF847B9FD03DC127503EBF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sirconch-sirconchUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E5698EB01CFF487F8FBEAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sirconch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1136149527116E7C00F6416F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1136149F27116E7C00F6416F /* ContentView.swift in Sources */,
+				1136149D27116E7C00F6416F /* sirconchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113614A627116E7D00F6416F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113614AF27116E7D00F6416F /* sirconchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		113614B127116E7D00F6416F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				113614BA27116E7D00F6416F /* sirconchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		113614AC27116E7D00F6416F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1136149827116E7C00F6416F /* sirconch */;
+			targetProxy = 113614AB27116E7D00F6416F /* PBXContainerItemProxy */;
+		};
+		113614B727116E7D00F6416F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1136149827116E7C00F6416F /* sirconch */;
+			targetProxy = 113614B627116E7D00F6416F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		113614BC27116E7D00F6416F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		113614BD27116E7D00F6416F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		113614BF27116E7D00F6416F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814E658232A31762918BAB8A /* Pods-sirconch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 100915;
+				DEVELOPMENT_ASSET_PATHS = "\"sirconch/Preview Content\"";
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = sirconch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.sirconch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		113614C027116E7D00F6416F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1945138B09BE14C3772746AA /* Pods-sirconch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 100915;
+				DEVELOPMENT_ASSET_PATHS = "\"sirconch/Preview Content\"";
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = sirconch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.sirconch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		113614C227116E7D00F6416F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6F35F9D4CDCAEB41CC61D56 /* Pods-sirconchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				INFOPLIST_FILE = sirconchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.sirconch.sirconchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sirconch.app/sirconch";
+			};
+			name = Debug;
+		};
+		113614C327116E7D00F6416F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A18AD8D415D08E96C6E880 /* Pods-sirconchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				INFOPLIST_FILE = sirconchTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.sirconch.sirconchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sirconch.app/sirconch";
+			};
+			name = Release;
+		};
+		113614C527116E7D00F6416F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6276A854F4AEFB0F5B787D8 /* Pods-sirconch-sirconchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				INFOPLIST_FILE = sirconchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.sirconch.sirconchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sirconch;
+			};
+			name = Debug;
+		};
+		113614C627116E7D00F6416F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E75B6FCA37E8C85B078C6AC /* Pods-sirconch-sirconchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M88NQK2Z77;
+				INFOPLIST_FILE = sirconchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jb.sirconch.sirconchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sirconch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1136149427116E7C00F6416F /* Build configuration list for PBXProject "sirconch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113614BC27116E7D00F6416F /* Debug */,
+				113614BD27116E7D00F6416F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		113614BE27116E7D00F6416F /* Build configuration list for PBXNativeTarget "sirconch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113614BF27116E7D00F6416F /* Debug */,
+				113614C027116E7D00F6416F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		113614C127116E7D00F6416F /* Build configuration list for PBXNativeTarget "sirconchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113614C227116E7D00F6416F /* Debug */,
+				113614C327116E7D00F6416F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		113614C427116E7D00F6416F /* Build configuration list for PBXNativeTarget "sirconchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				113614C527116E7D00F6416F /* Debug */,
+				113614C627116E7D00F6416F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1136149127116E7C00F6416F /* Project object */;
+}
