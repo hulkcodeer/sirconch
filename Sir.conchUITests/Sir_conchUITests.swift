@@ -1,13 +1,13 @@
 //
-//  sirconchUITests.swift
-//  sirconchUITests
+//  Sir_conchUITests.swift
+//  Sir.conchUITests
 //
-//  Created by 박현진 on 2021/10/09.
+//  Created by In Ok Park on 2021/09/14.
 //
 
 import XCTest
 
-class sirconchUITests: XCTestCase {
+class Sir_conchUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -32,7 +32,7 @@ class sirconchUITests: XCTestCase {
     }
 
     func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
+        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.
             measure(metrics: [XCTApplicationLaunchMetric()]) {
                 XCUIApplication().launch()

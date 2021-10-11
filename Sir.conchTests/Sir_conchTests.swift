@@ -1,14 +1,14 @@
 //
-//  sirconchTests.swift
-//  sirconchTests
+//  Sir_conchTests.swift
+//  Sir.conchTests
 //
-//  Created by 박현진 on 2021/10/09.
+//  Created by In Ok Park on 2021/09/14.
 //
 
 import XCTest
-@testable import sirconch
+@testable import Sir_conch
 
-class sirconchTests: XCTestCase {
+class Sir_conchTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
