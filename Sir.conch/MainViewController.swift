@@ -194,11 +194,7 @@ internal class MainViewController: UIViewController {
                 
         if txtStr.contains("먹어") || txtStr.contains("먹을") {
             lbAnswer.text = foodAnswer.randomElement()
-        } else {
-            lbAnswer.text = generalAnswer.randomElement()
-        }
-        
-        if txtStr.contains("자살") || txtStr.contains("죽을") || txtStr.contains("죽어") || txtStr.contains("죽고"){
+        } else if txtStr.contains("자살") || txtStr.contains("죽을") || txtStr.contains("죽어") || txtStr.contains("죽고"){
             lbAnswer.text = suicideAnswer.randomElement()
         } else {
             lbAnswer.text = generalAnswer.randomElement()
