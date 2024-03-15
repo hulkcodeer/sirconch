@@ -50,14 +50,17 @@ internal class MainViewController: UIViewController {
     private let animationDurationStartAlpha: CGFloat = 0.0
     private let animationDurationEndAlpha: CGFloat = 1.0
     private var sendState: SendState = .disable
-    private let positiveAnswer = ["당장 시작해.", "좋아.", "그래.", "나중에 해.", "다시 한번 물어봐.",
-                          "안돼.", "놉.", "하지마.", "최.악.", "가만히 있어.",
-                          "그것도 안돼.", "진행시켜.", "고고.", "오 좋은데?"]
-    private let negativeAnswer = ["먹지마.", "먹어.", "굶어.", "응, 먹지마.", "다시 한번 물어봐.",
-       "그래.", "조금만 먹어"]
+    private let generalAnswer = ["당장 시작해.", "좋아.", "그래.", "나중에 해.", "다시 한번 물어봐.",
+    "안돼.", "놉.", "하지마.", "최.악.", "가만히 있어.", "그것도 안돼.", "진행시켜.", "고고.", "오 좋은데?"]
     
-    private let foodPositiveAnswer = ["그래.", "다 먹어.", "조금만 먹어."]
-    private let foodNegativeAnswer = ["먹지마.", "둘다 먹지마.", "굶어."]
+    private let foodAnswer = ["먹지마.", "먹어.", "굶어.", "응, 먹지마.", "다시 한번 물어봐.",
+    "그래.", "조금만 먹어"]
+    
+    private let suicideAnswer = ["그러지 마.", "난 니가 좋아.",
+                                      "좀만 더 버텨봐.",
+                                      "내일 다시 물어봐.",
+                                      "살아있으면\n곧 좋아질거야."]
+    
             
     lazy var accessoryToolbarWithDoneButtonaccessoryToolbarWithDoneButton: UIToolbar = {
         
@@ -190,9 +193,15 @@ internal class MainViewController: UIViewController {
         self.changeSendState(state: self.sendState)
                 
         if txtStr.contains("먹어") || txtStr.contains("먹을") {
-            lbAnswer.text = foodNegativeAnswer.randomElement()
+            lbAnswer.text = foodAnswer.randomElement()
         } else {
-            lbAnswer.text = foodPositiveAnswer.randomElement()
+            lbAnswer.text = generalAnswer.randomElement()
+        }
+        
+        if txtStr.contains("자살") || txtStr.contains("죽을") || txtStr.contains("죽어") || txtStr.contains("죽고"){
+            lbAnswer.text = suicideAnswer.randomElement()
+        } else {
+            lbAnswer.text = generalAnswer.randomElement()
         }
         
         self.imgConch.alpha = self.animationDurationStartAlpha

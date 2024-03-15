@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -94,12 +94,16 @@
                                         <rect key="frame" x="19" y="423.66666666666663" width="337" height="116"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Bubble" translatesAutoresizingMaskIntoConstraints="NO" id="6wz-zd-i3Q">
-                                                <rect key="frame" x="0.0" y="0.0" width="337" height="116"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="대답" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWH-Mm-q1m">
-                                                <rect key="frame" x="4" y="53" width="337" height="29"/>
+                                                <rect key="frame" x="50" y="0.0" width="237" height="116"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="29" id="r3o-hd-5NJ"/>
+                                                    <constraint firstAttribute="height" constant="116" id="PfR-Kg-DKd"/>
+                                                    <constraint firstAttribute="width" constant="237" id="dEG-iQ-Gu1"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="대답" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWH-Mm-q1m">
+                                                <rect key="frame" x="60" y="17" width="217" height="94"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="29" id="UCT-tW-GhN"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="20"/>
                                                 <color key="textColor" red="0.078678900539999999" green="0.024827904460000001" blue="0.10716540400000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -107,14 +111,15 @@
                                             </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="JWH-Mm-q1m" firstAttribute="top" secondItem="xnl-dL-QWG" secondAttribute="top" constant="53" id="99r-wl-GvX"/>
-                                            <constraint firstAttribute="trailing" secondItem="JWH-Mm-q1m" secondAttribute="trailing" id="CLv-Og-Ubc"/>
+                                            <constraint firstItem="6wz-zd-i3Q" firstAttribute="trailing" secondItem="JWH-Mm-q1m" secondAttribute="trailing" constant="10" id="0ne-jK-u72"/>
+                                            <constraint firstItem="6wz-zd-i3Q" firstAttribute="centerX" secondItem="xnl-dL-QWG" secondAttribute="centerX" id="5QS-vp-3b5"/>
                                             <constraint firstItem="6wz-zd-i3Q" firstAttribute="top" secondItem="xnl-dL-QWG" secondAttribute="top" id="LqM-KV-6Q5"/>
                                             <constraint firstAttribute="bottom" secondItem="6wz-zd-i3Q" secondAttribute="bottom" id="N4f-0Q-hkf"/>
                                             <constraint firstAttribute="width" constant="337" id="X4i-sX-hUZ"/>
-                                            <constraint firstItem="6wz-zd-i3Q" firstAttribute="leading" secondItem="xnl-dL-QWG" secondAttribute="leading" id="YBv-1n-ypv"/>
-                                            <constraint firstItem="JWH-Mm-q1m" firstAttribute="leading" secondItem="xnl-dL-QWG" secondAttribute="leading" id="pEg-oc-ho0"/>
-                                            <constraint firstAttribute="trailing" secondItem="6wz-zd-i3Q" secondAttribute="trailing" id="qIg-IU-rwi"/>
+                                            <constraint firstItem="JWH-Mm-q1m" firstAttribute="top" secondItem="xnl-dL-QWG" secondAttribute="top" constant="17" id="bj3-dH-nZ1"/>
+                                            <constraint firstItem="JWH-Mm-q1m" firstAttribute="leading" secondItem="6wz-zd-i3Q" secondAttribute="leading" constant="10" id="hcl-X5-ck8"/>
+                                            <constraint firstItem="JWH-Mm-q1m" firstAttribute="centerX" secondItem="6wz-zd-i3Q" secondAttribute="centerX" id="lBr-Xq-8BM"/>
+                                            <constraint firstAttribute="bottom" secondItem="JWH-Mm-q1m" secondAttribute="bottom" constant="5" id="q1u-Qw-wwe"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -143,7 +148,7 @@
                                 </variation>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Knh-QJ-fCO">
-                                <rect key="frame" x="319" y="49" width="32" height="32"/>
+                                <rect key="frame" x="319" y="55" width="32" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="Eqd-kG-fTq"/>
                                     <constraint firstAttribute="width" constant="32" id="IwU-j8-3T6"/>
@@ -191,15 +196,15 @@
             <objects>
                 <viewController storyboardIdentifier="InfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gyA-EI-8fG" userLabel="View Controller_info" customClass="InfoViewController" customModule="Sir_conch" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gcJ-a8-Xff">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="802"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="bgNight" translatesAutoresizingMaskIntoConstraints="NO" id="kQG-rQ-eXF">
-                                <rect key="frame" x="0.0" y="0.0" width="383" height="758"/>
+                                <rect key="frame" x="0.0" y="0.0" width="383" height="802"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obV-n7-mCO" userLabel="View_wrap">
-                                <rect key="frame" x="0.0" y="263" width="375" height="232"/>
+                                <rect key="frame" x="0.0" y="285" width="375" height="232"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="infoIconimg" translatesAutoresizingMaskIntoConstraints="NO" id="Yei-MV-cxq">
                                         <rect key="frame" x="120" y="0.0" width="135" height="135"/>
