@@ -9,7 +9,7 @@ import UIKit
 import AppTrackingTransparency
 import GoogleMobileAds
 
-class MainViewController: UIViewController {
+internal class MainViewController: UIViewController {
     enum SendState {
         case disable
         case question
@@ -47,20 +47,20 @@ class MainViewController: UIViewController {
     private var bannerView: GADBannerView!
     
     
-    let animationDurationStartAlpha: CGFloat = 0.0
-    let animationDurationEndAlpha: CGFloat = 1.0
+    private let animationDurationStartAlpha: CGFloat = 0.0
+    private let animationDurationEndAlpha: CGFloat = 1.0
+    private var sendState: SendState = .disable
+    private let positiveAnswer = ["당장 시작해.", "좋아.", "그래.", "나중에 해.", "다시 한번 물어봐.",
+                          "안돼.", "놉.", "하지마.", "최.악.", "가만히 있어.",
+                          "그것도 안돼.", "진행시켜.", "고고.", "오 좋은데?"]
+    private let negativeAnswer = ["먹지마.", "먹어.", "굶어.", "응, 먹지마.", "다시 한번 물어봐.",
+       "그래.", "조금만 먹어"]
     
-    var sendState: SendState = .disable
-    
-    let array1 = ["당장 시작해.", "좋아.", "그래.", "나중에 해.", "다시 한번 물어봐.",
-    "안돼.", "놉.", "하지마.", "최.악.", "가만히 있어.", "그것도 안돼."]
-    let array2 = ["먹지마.", "먹어.", "굶어.", "응, 먹지마.", "다시 한번 물어봐.",
-    "그래.", "조금만 먹어"]
-    
-    // 자료형 string, char, bool, float, Int, Double
-    
+    private let foodPositiveAnswer = ["그래.", "다 먹어.", "조금만 먹어."]
+    private let foodNegativeAnswer = ["먹지마.", "둘다 먹지마.", "굶어."]
+            
     lazy var accessoryToolbarWithDoneButtonaccessoryToolbarWithDoneButton: UIToolbar = {
-
+        
         let toolbar = UIToolbar(frame: CGRect.zero)
         toolbar.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
@@ -69,9 +69,9 @@ class MainViewController: UIViewController {
         toolbar.items = [leftSpace, doneButton]
         
         switch traitCollection.userInterfaceStyle {
-            case .light, .unspecified:
+        case .light, .unspecified:
             doneButton.tintColor = .black
-            case .dark:
+        case .dark:
             doneButton.tintColor = .white
         @unknown default:
             fatalError()
@@ -82,59 +82,53 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                        
+        
         txtQuestion.layer.cornerRadius = 7
         txtQuestion.layer.borderColor = UIColor.white.cgColor
         txtQuestion.layer.borderWidth = 1.0
         txtQuestion.addLeftPadding()
-                
+        
         Answer.alpha = 0.0
-                        
+        
         txtQuestion.inputAccessoryView = accessoryToolbarWithDoneButtonaccessoryToolbarWithDoneButton
         
         if #available(iOS 14, *) {
             ATTrackingManager.requestTrackingAuthorization { status in
                 switch status {
-                case .authorized:
+                case .authorized, .denied, .notDetermined, .restricted:
                     self.setupBannerView()
-                case .denied:
-                    self.setupBannerView()
-                case .notDetermined:
-                    print("notDetermined")
-                case .restricted:
-                    print("restricted")
                 default: break
                 }
             }
         } else {
             self.setupBannerView()
-        }        
+        }
     }
     
     @objc func keyboardDoneButtonTapped(_ sender: UIBarButtonItem) {
         self.view.endEditing(true)
     }
-        
+    
     func addBannerViewToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bannerView)
         view.addConstraints(
-          [NSLayoutConstraint(item: bannerView,
-                              attribute: .bottom,
-                              relatedBy: .equal,
-                              toItem: bottomLayoutGuide,
-                              attribute: .top,
-                              multiplier: 1,
-                              constant: 0),
-           NSLayoutConstraint(item: bannerView,
-                              attribute: .centerX,
-                              relatedBy: .equal,
-                              toItem: view,
-                              attribute: .centerX,
-                              multiplier: 1,
-                              constant: 0)
-          ])
-       }
+            [NSLayoutConstraint(item: bannerView,
+                                attribute: .bottom,
+                                relatedBy: .equal,
+                                toItem: bottomLayoutGuide,
+                                attribute: .top,
+                                multiplier: 1,
+                                constant: 0),
+             NSLayoutConstraint(item: bannerView,
+                                attribute: .centerX,
+                                relatedBy: .equal,
+                                toItem: view,
+                                attribute: .centerX,
+                                multiplier: 1,
+                                constant: 0)
+            ])
+    }
     
     internal func setupBannerView() {
         
@@ -143,14 +137,14 @@ class MainViewController: UIViewController {
             self.bannerView = GADBannerView(adSize: adSize)
             self.bannerView.backgroundColor = .clear
             self.addBannerViewToView(self.bannerView)
-    //        bannerView.adUnitID = "ca-app-pub-3926120372825354/9657965886"¸
+            //        bannerView.adUnitID = "ca-app-pub-3926120372825354/9657965886"¸
             self.bannerView.adUnitID = "ca-app-pub-8965771939775493/8407428627"
             self.bannerView.rootViewController = self
             self.bannerView.load(GADRequest())
             self.bannerView.delegate = self
         }
     }
-
+    
     @IBAction func btnInfo(_ sender: UIButton) {
         let viewControllerName = self.storyboard?.instantiateViewController(withIdentifier: "InfoViewController")
         viewControllerName?.modalTransitionStyle = .flipHorizontal
@@ -194,17 +188,13 @@ class MainViewController: UIViewController {
         
         self.sendState = .question
         self.changeSendState(state: self.sendState)
-        
-        // Random array
-        if txtStr.contains("먹어") {
-            lbAnswer.text = array2.randomElement()
-        }
-        else if txtStr.contains("먹을") {
-            lbAnswer.text = array2.randomElement()
+                
+        if txtStr.contains("먹어") || txtStr.contains("먹을") {
+            lbAnswer.text = foodNegativeAnswer.randomElement()
         } else {
-            lbAnswer.text = array1.randomElement()
+            lbAnswer.text = foodPositiveAnswer.randomElement()
         }
-
+        
         self.imgConch.alpha = self.animationDurationStartAlpha
         self.Answer.alpha = self.animationDurationStartAlpha
         UIView.animate(withDuration: 1.0, animations: {
@@ -247,19 +237,19 @@ class MainViewController: UIViewController {
     @IBAction func actShare(_ sender: Any) {
         var imgContext: UIImage?
         guard let currentLayer = UIApplication.shared.windows.first(where: { $0.isKeyWindow })?.layer else { return }
-
+        
         let currentScale = UIScreen.main.scale
         UIGraphicsBeginImageContextWithOptions(currentLayer.frame.size, false, currentScale)
         guard let currentContext = UIGraphicsGetCurrentContext() else { return }
-
+        
         currentLayer.render(in: currentContext)
         imgContext = UIGraphicsGetImageFromCurrentImageContext()
         
         guard let _imgContext = imgContext else { return }
-                
+        
         UIGraphicsEndImageContext()
         UIImageWriteToSavedPhotosAlbum(_imgContext, nil, nil, nil)
-
+        
         let shareActivity = UIActivityViewController(activityItems: [_imgContext], applicationActivities: nil)
         UIApplication.shared.windows.first?.rootViewController?.present(shareActivity, animated: true, completion: nil)
     }
@@ -267,7 +257,7 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {        
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.btnSend(UIButton())
         return true
     }
@@ -286,7 +276,7 @@ extension UIView {
     func applyGradient(colours: [UIColor]) -> CAGradientLayer {
         return self.applyGradient(colours: colours, locations: nil)
     }
-
+    
     @discardableResult
     func applyGradient(colours: [UIColor], locations: [NSNumber]?) -> CAGradientLayer {
         let gradient: CAGradientLayer = CAGradientLayer()

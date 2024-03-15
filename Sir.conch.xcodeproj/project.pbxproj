@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63074DED2BA3FD5100998930 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 63074DEC2BA3FD5100998930 /* GoogleMobileAds */; };
 		7068B61D26F07BCE004401E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068B61C26F07BCE004401E1 /* AppDelegate.swift */; };
 		7068B61F26F07BCE004401E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068B61E26F07BCE004401E1 /* SceneDelegate.swift */; };
 		7068B62126F07BCE004401E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068B62026F07BCE004401E1 /* MainViewController.swift */; };
@@ -16,9 +17,6 @@
 		7068B63426F07BCF004401E1 /* Sir_conchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068B63326F07BCF004401E1 /* Sir_conchTests.swift */; };
 		7068B63F26F07BCF004401E1 /* Sir_conchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068B63E26F07BCF004401E1 /* Sir_conchUITests.swift */; };
 		706AFB8E270818C700A8027B /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706AFB8D270818C700A8027B /* InfoViewController.swift */; };
-		72BCCACA18F7086F40242B0D /* Pods_Sir_conch_Sir_conchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CAA9EB63299B1F8DE448DCE /* Pods_Sir_conch_Sir_conchUITests.framework */; };
-		8C65DC8B1868945072C7D5DE /* Pods_Sir_conch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3AB01FFDF63D421D4F2A96 /* Pods_Sir_conch.framework */; };
-		AB66846C4300ACC0B730BE00 /* Pods_Sir_conchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1095A0CBC33A2F104F253B /* Pods_Sir_conchTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		17D07C5DA6DC0C6DC2196E19 /* Pods-Sir.conch-Sir.conchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sir.conch-Sir.conchUITests.release.xcconfig"; path = "Target Support Files/Pods-Sir.conch-Sir.conchUITests/Pods-Sir.conch-Sir.conchUITests.release.xcconfig"; sourceTree = "<group>"; };
-		4650C6A0C810AE5ABDE731CD /* Pods-Sir.conchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sir.conchTests.release.xcconfig"; path = "Target Support Files/Pods-Sir.conchTests/Pods-Sir.conchTests.release.xcconfig"; sourceTree = "<group>"; };
-		4A3AB01FFDF63D421D4F2A96 /* Pods_Sir_conch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sir_conch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5303D6C402C6B64B0B243ABA /* Pods-Sir.conch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sir.conch.debug.xcconfig"; path = "Target Support Files/Pods-Sir.conch/Pods-Sir.conch.debug.xcconfig"; sourceTree = "<group>"; };
-		63516CB96B05BD2134423D94 /* Pods-Sir.conch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sir.conch.release.xcconfig"; path = "Target Support Files/Pods-Sir.conch/Pods-Sir.conch.release.xcconfig"; sourceTree = "<group>"; };
 		7068B61926F07BCE004401E1 /* Sir.conch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sir.conch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7068B61C26F07BCE004401E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7068B61E26F07BCE004401E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,10 +53,6 @@
 		7068B64026F07BCF004401E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		706AFB8D270818C700A8027B /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		706AFB902708204B00A8027B /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
-		90693F96B6C2D63FDDE9C66A /* Pods-Sir.conch-Sir.conchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sir.conch-Sir.conchUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sir.conch-Sir.conchUITests/Pods-Sir.conch-Sir.conchUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9CAA9EB63299B1F8DE448DCE /* Pods_Sir_conch_Sir_conchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sir_conch_Sir_conchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF1095A0CBC33A2F104F253B /* Pods_Sir_conchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sir_conchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9AFD2B23A2F2A7E3CE2ABD0 /* Pods-Sir.conchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sir.conchTests.debug.xcconfig"; path = "Target Support Files/Pods-Sir.conchTests/Pods-Sir.conchTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C65DC8B1868945072C7D5DE /* Pods_Sir_conch.framework in Frameworks */,
+				63074DED2BA3FD5100998930 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB66846C4300ACC0B730BE00 /* Pods_Sir_conchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +75,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72BCCACA18F7086F40242B0D /* Pods_Sir_conch_Sir_conchUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +89,6 @@
 				7068B63D26F07BCF004401E1 /* Sir.conchUITests */,
 				7068B61A26F07BCE004401E1 /* Products */,
 				706AFB8F2708204B00A8027B /* Frameworks */,
-				9567EB62FE3DBB0DB4E58550 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,24 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				706AFB902708204B00A8027B /* AppTrackingTransparency.framework */,
-				4A3AB01FFDF63D421D4F2A96 /* Pods_Sir_conch.framework */,
-				9CAA9EB63299B1F8DE448DCE /* Pods_Sir_conch_Sir_conchUITests.framework */,
-				BF1095A0CBC33A2F104F253B /* Pods_Sir_conchTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9567EB62FE3DBB0DB4E58550 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5303D6C402C6B64B0B243ABA /* Pods-Sir.conch.debug.xcconfig */,
-				63516CB96B05BD2134423D94 /* Pods-Sir.conch.release.xcconfig */,
-				90693F96B6C2D63FDDE9C66A /* Pods-Sir.conch-Sir.conchUITests.debug.xcconfig */,
-				17D07C5DA6DC0C6DC2196E19 /* Pods-Sir.conch-Sir.conchUITests.release.xcconfig */,
-				E9AFD2B23A2F2A7E3CE2ABD0 /* Pods-Sir.conchTests.debug.xcconfig */,
-				4650C6A0C810AE5ABDE731CD /* Pods-Sir.conchTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,17 +150,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7068B64326F07BCF004401E1 /* Build configuration list for PBXNativeTarget "Sir.conch" */;
 			buildPhases = (
-				DB11379CD065831E090C4D12 /* [CP] Check Pods Manifest.lock */,
 				7068B61526F07BCE004401E1 /* Sources */,
 				7068B61626F07BCE004401E1 /* Frameworks */,
 				7068B61726F07BCE004401E1 /* Resources */,
-				6FDD938C1409AA8C43BBF143 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Sir.conch;
+			packageProductDependencies = (
+				63074DEC2BA3FD5100998930 /* GoogleMobileAds */,
+			);
 			productName = Sir.conch;
 			productReference = 7068B61926F07BCE004401E1 /* Sir.conch.app */;
 			productType = "com.apple.product-type.application";
@@ -222,7 +193,6 @@
 				7068B63626F07BCF004401E1 /* Sources */,
 				7068B63726F07BCF004401E1 /* Frameworks */,
 				7068B63826F07BCF004401E1 /* Resources */,
-				980F8F393A5D3EA6D301A1CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,6 +235,9 @@
 				Base,
 			);
 			mainGroup = 7068B61026F07BCE004401E1;
+			packageReferences = (
+				63074DEB2BA3FD5100998930 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = 7068B61A26F07BCE004401E1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -304,40 +277,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6FDD938C1409AA8C43BBF143 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sir.conch/Pods-Sir.conch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sir.conch/Pods-Sir.conch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sir.conch/Pods-Sir.conch-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		980F8F393A5D3EA6D301A1CD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sir.conch-Sir.conchUITests/Pods-Sir.conch-Sir.conchUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Sir.conch-Sir.conchUITests/Pods-Sir.conch-Sir.conchUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sir.conch-Sir.conchUITests/Pods-Sir.conch-Sir.conchUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A77C90156519EB9C0F3C48AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,28 +293,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Sir.conch-Sir.conchUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DB11379CD065831E090C4D12 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Sir.conch-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -587,7 +504,6 @@
 		};
 		7068B64426F07BCF004401E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5303D6C402C6B64B0B243ABA /* Pods-Sir.conch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -611,7 +527,6 @@
 		};
 		7068B64526F07BCF004401E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63516CB96B05BD2134423D94 /* Pods-Sir.conch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -635,7 +550,6 @@
 		};
 		7068B64726F07BCF004401E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9AFD2B23A2F2A7E3CE2ABD0 /* Pods-Sir.conchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -657,7 +571,6 @@
 		};
 		7068B64826F07BCF004401E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4650C6A0C810AE5ABDE731CD /* Pods-Sir.conchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -679,7 +592,6 @@
 		};
 		7068B64A26F07BCF004401E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90693F96B6C2D63FDDE9C66A /* Pods-Sir.conch-Sir.conchUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -699,7 +611,6 @@
 		};
 		7068B64B26F07BCF004401E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17D07C5DA6DC0C6DC2196E19 /* Pods-Sir.conch-Sir.conchUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -757,6 +668,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63074DEB2BA3FD5100998930 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63074DEC2BA3FD5100998930 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63074DEB2BA3FD5100998930 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7068B61126F07BCE004401E1 /* Project object */;
 }
