@@ -141,7 +141,8 @@ internal class MainViewController: UIViewController {
             self.bannerView.backgroundColor = .clear
             self.addBannerViewToView(self.bannerView)
             //        bannerView.adUnitID = "ca-app-pub-3926120372825354/9657965886"¸
-            self.bannerView.adUnitID = "ca-app-pub-8965771939775493/8407428627"
+//            self.bannerView.adUnitID = "ca-app-pub-8965771939775493/8407428627"
+            self.bannerView.adUnitID = "ca-app-pub-3926120372825354/4225577006"
             self.bannerView.rootViewController = self
             self.bannerView.load(GADRequest())
             self.bannerView.delegate = self
