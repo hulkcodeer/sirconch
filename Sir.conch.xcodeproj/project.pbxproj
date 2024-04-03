@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		63074DED2BA3FD5100998930 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 63074DEC2BA3FD5100998930 /* GoogleMobileAds */; };
+		637981FA2BB6417000E30174 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 637981F92BB6417000E30174 /* PrivacyInfo.xcprivacy */; };
 		7068B61D26F07BCE004401E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068B61C26F07BCE004401E1 /* AppDelegate.swift */; };
 		7068B61F26F07BCE004401E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068B61E26F07BCE004401E1 /* SceneDelegate.swift */; };
 		7068B62126F07BCE004401E1 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7068B62026F07BCE004401E1 /* MainViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		637981F92BB6417000E30174 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		7068B61926F07BCE004401E1 /* Sir.conch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sir.conch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7068B61C26F07BCE004401E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7068B61E26F07BCE004401E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				7068B62726F07BCF004401E1 /* LaunchScreen.storyboard */,
 				7068B62A26F07BCF004401E1 /* Info.plist */,
 				706AFB8D270818C700A8027B /* InfoViewController.swift */,
+				637981F92BB6417000E30174 /* PrivacyInfo.xcprivacy */,
 			);
 			path = Sir.conch;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			files = (
 				7068B62926F07BCF004401E1 /* LaunchScreen.storyboard in Resources */,
 				7068B62626F07BCF004401E1 /* Assets.xcassets in Resources */,
+				637981FA2BB6417000E30174 /* PrivacyInfo.xcprivacy in Resources */,
 				7068B62426F07BCE004401E1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -509,7 +513,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 03221457;
+				CURRENT_PROJECT_VERSION = 03290924;
 				DEVELOPMENT_TEAM = M88NQK2Z77;
 				INFOPLIST_FILE = Sir.conch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
@@ -532,7 +536,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 03221457;
+				CURRENT_PROJECT_VERSION = 03290924;
 				DEVELOPMENT_TEAM = M88NQK2Z77;
 				INFOPLIST_FILE = Sir.conch/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
