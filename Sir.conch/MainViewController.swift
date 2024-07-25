@@ -19,16 +19,16 @@ internal class MainViewController: UIViewController {
         func getString () -> String {
             switch self {
             case .disable:
-                return "질문하기"
+                return "ask_a_question".localized()
                 
             case .question:
-                return "질문하기"
+                return "ask_a_question".localized()
                 
             case .reQuesstion:
-                return "질문하기"
+                return "ask_a_question".localized()
                 
             case .questionComplete:
-                return "다시하기"
+                return "try_again".localized()
             }
         }
     }
@@ -50,25 +50,43 @@ internal class MainViewController: UIViewController {
     private let animationDurationStartAlpha: CGFloat = 0.0
     private let animationDurationEndAlpha: CGFloat = 1.0
     private var sendState: SendState = .disable
-    private let generalAnswer = ["당장 시작해.", "좋아.", "그래.", "나중에 해.", "다시 한번 물어봐.",
-    "안돼.", "놉.", "하지마.", "최.악.", "가만히 있어.", "그것도 안돼.", "진행시켜.", "고고.", "오 좋은데?"]
+    private let generalAnswer = ["start_now".localized(),
+                                 "like_it".localized(),
+                                 "yes".localized(),
+                                 "do_it_later".localized(),
+                                 "ask_again".localized(),
+                                 "no".localized(),
+                                 "nope".localized(),
+                                 "dont_do_it".localized(),
+                                 "worst".localized(),
+                                 "stay_still".localized(),
+                                 "not_that_either".localized(),
+                                 "proceed".localized(),
+                                 "go_go".localized(),
+                                 "oh_good".localized()]
     
-    private let foodAnswer = ["먹지마.", "먹어.", "굶어.", "응, 먹지마.", "다시 한번 물어봐.",
-    "그래.", "조금만 먹어"]
+    private let foodAnswer = ["dont_eat".localized(),
+                              "eat".localized(),
+                              "starve".localized(),
+                              "dont_eat_yet".localized(),
+                              "ask_again".localized(),
+                              "yes".localized(),
+                              "eat_a_little".localized()]
     
-    private let suicideAnswer = ["그러지 마.", "난 니가 좋아.",
-                                      "좀만 더 버텨봐.",
-                                      "내일 다시 물어봐.",
-                                      "살아있으면\n곧 좋아질거야."]
+    private let suicideAnswer = ["dont_do_that".localized(),
+                                 "i_like_you".localized(),
+                                 "hold_on".localized(),
+                                 "ask_tomorrow".localized(),
+                                 "stay_alive".localized()]
     
-            
+    
     lazy var accessoryToolbarWithDoneButtonaccessoryToolbarWithDoneButton: UIToolbar = {
         
         let toolbar = UIToolbar(frame: CGRect.zero)
         toolbar.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         let leftSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let doneButton = UIBarButtonItem(title: "닫기", style: .done, target: self, action: #selector(keyboardDoneButtonTapped(_:)))
+        let doneButton = UIBarButtonItem(title: "닫기".localized(), style: .done, target: self, action: #selector(keyboardDoneButtonTapped(_:)))
         toolbar.items = [leftSpace, doneButton]
         
         switch traitCollection.userInterfaceStyle {
@@ -191,10 +209,10 @@ internal class MainViewController: UIViewController {
         
         self.sendState = .question
         self.changeSendState(state: self.sendState)
-                
-        if txtStr.contains("먹어") || txtStr.contains("먹을") {
+        
+        if txtStr.contains("먹어".localized()) || txtStr.contains("먹을".localized()) {
             lbAnswer.text = foodAnswer.randomElement()
-        } else if txtStr.contains("자살") || txtStr.contains("죽을") || txtStr.contains("죽어") || txtStr.contains("죽고"){
+        } else if txtStr.contains("자살".localized()) || txtStr.contains("죽을".localized()) || txtStr.contains("죽어".localized()) || txtStr.contains("죽고".localized()){
             lbAnswer.text = suicideAnswer.randomElement()
         } else {
             lbAnswer.text = generalAnswer.randomElement()
