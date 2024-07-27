@@ -1,0 +1,21 @@
+
+/* Class = "UILabel"; text = "소라고둥님께 물어봐"; ObjectID = "41D-84-LfY"; */
+"41D-84-LfY.text" = "Ask Sir.Conch";
+
+/* Class = "UILabel"; text = "대답"; ObjectID = "JWH-Mm-q1m"; */
+"JWH-Mm-q1m.text" = "Answer";
+
+/* Class = "UILabel"; text = "소라고둥님께 물어봐"; ObjectID = "O6S-Wq-I46"; */
+"O6S-Wq-I46.text" = "Ask Sir.Conch";
+
+/* Class = "UIButton"; normalTitle = "질문하기"; ObjectID = "SeR-jK-J9J"; */
+"SeR-jK-J9J.normalTitle" = "Ask";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZMi-oW-qu1"; */
+"ZMi-oW-qu1.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "버전 1.0.0"; ObjectID = "Zzm-ie-NP2"; */
+"Zzm-ie-NP2.text" = "Version 1.0.0";
+
+/* Class = "UILabel"; text = "© 2021 2_Knock. All right reserved."; ObjectID = "pJR-pu-qFK"; */
+"pJR-pu-qFK.text" = "© 2021 2_Knock. All right reserved.";
